@@ -38,15 +38,15 @@ shinyUI(fluidPage(theme = shinytheme("united"),
                     inputId = "I_T_df",
                     value = 10, min = 2, max = Inf, step = 1
                 ),
-                numericInput(
+                sliderInput(
                     label = "Quantile",
                     inputId = "I_T_quantile",
                     value = 0.50, min = 0.00, max = 1.00, step = 0.001
                 ),
-                numericInput(
+                sliderInput(
                     label = "Statistic (T)",
                     inputId = "I_T_stat",
-                    value = 0.00, min = -Inf, max = Inf, step = 0.01
+                    value = 0.00, min = -5, max = 5, step = 0.01
                 )
             )
         ),
